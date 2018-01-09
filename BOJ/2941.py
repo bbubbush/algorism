@@ -36,15 +36,16 @@ nj			nj
 
 inData = input()
 croAlpha = ['c=', 'c-', 'dz=', 'd-', 'lj', 'nj', 's=', 'z=']
-# 소문자 추가
 for i in range(97, 123):
     croAlpha.append(chr(i))
     
 answer = 0
 for word in croAlpha:
     if inData.find(word) > -1:
-        answer += inData.count(word)        # 갯수만큼 카운
-        inData = inData.replace(word, '')   # 카운트 된 알파벳은 제거
+        answer += inData.count(word)
+        inData = inData.replace(word, ' ')
         
 print(answer)
+
+
         
