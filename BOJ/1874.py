@@ -66,10 +66,9 @@ list index out of range를 막으려고 넣었다.
 
 '''
 
-
 def stack_sequence(in_data_list, in_data_size):
 	num = 2
-	temp_s, plus_minus_list = [-1, 1], ['+']
+	temp_s, plus_minus_list = [-1, 1], ['+']    # temp_s's -1 is dummy data
 
 	idx = 0
 
@@ -87,12 +86,13 @@ def stack_sequence(in_data_list, in_data_size):
 
 	return plus_minus_list
 
+# input size
 in_data_size = int(input())
 in_data_list = []
 
 for i in range(in_data_size):
     in_data_list.append(int(input()))
-in_data_list.append(-1)
+in_data_list.append(-1)    # dummy data because list size out of range
 result = stack_sequence(in_data_list, in_data_size)
 
 if isinstance(result, list):
@@ -100,3 +100,5 @@ if isinstance(result, list):
         print(i)
 else:
     print(result)	
+
+# https://github.com/bbubbush/algorithm/blob/master/BOJ/1874.py	
