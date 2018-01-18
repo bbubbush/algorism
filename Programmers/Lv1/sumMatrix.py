@@ -16,8 +16,6 @@
 
 '''
 
-
-
 # 풀이 1 - 일반적인 2차원 배열
 def sumMatrix(A,B):
     answer = []
