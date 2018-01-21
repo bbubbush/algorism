@@ -6,7 +6,7 @@ lzw("KAKAO")
 lzw("TOBEORNOTTOBEORTOBEORNOT")
 lzw("ABABABABABABABAB")
 
-출력 예제)
+출력 예제)  
 [11, 1, 27, 15]
 [20, 15, 2, 5, 15, 18, 14, 15, 20, 27, 29, 31, 36, 30, 32, 34]
 [1, 2, 27, 29, 28, 31, 30]
