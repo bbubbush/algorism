@@ -42,8 +42,8 @@ def product_matrix(A, B):
                 temp += A[i][k] * B[k][j]
             tempList.append(temp)
         answer.append(tempList)
-    #return answer
-    return np.matmul(A, B).tolist()
+    return answer
+    #return np.matmul(A, B).tolist()
 
 # 아래는 테스트로 출력해 보기 위한 코드입니다.
 a = [[1, 2, 3], [2, 3, 4], [1, 2, 3]]
