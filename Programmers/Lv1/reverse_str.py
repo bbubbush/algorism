@@ -22,7 +22,7 @@ str는 영문 대소문자로만 구성되어 있으며, 대문자는 소문자�
 list[arg1:(arg2):(arg3)]
 arg1 : list의 시작지점의 index
 arg2 : list의 끝나는 지점의 index(5라고 입력하면 4까지 출력한다)
-arg3 : arg1에서 arg2로 움직이는 index값을 설정. 기본값은 1
+arg3 : arg1에서 arg2로 움직이는 index값을 설정. 기본값은 1이다.
 
 '''
 

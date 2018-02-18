@@ -23,6 +23,7 @@ strange_sort함수를 완성해 보세요.
 
 def strange_sort(strings, n):
     """ 정렬 기준이 같을 때는 리스트 순으로 반영해야해서 이건 실패
+    
     temp = sorted(list(map(lambda x : x[n:]+x[:n], strings)))
     return list(map(lambda x : x[-n:]+x[:-n], temp))
     """
