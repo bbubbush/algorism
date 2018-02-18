@@ -46,13 +46,13 @@ def snail_array(m, n):
         i, j = cycle, cycle-1
         end = m*n == 1 and 1 or 2*(m+n)-4   # m과 n이 1일때만 이 규칙이 성립하지 않아서 삼항으로 조건을 줌
         for cnt in range(end):
-            if cnt < n:
+            if cnt < n:           # 동
                 j += 1
-            elif cnt < n+m-1:
+            elif cnt < n+m-1:     # 서
                 i += 1
-            elif cnt < 2*n+m-2:
+            elif cnt < 2*n+m-2:   # 남
                 j -= 1
-            elif cnt < 2*(n+m)-2:
+            elif cnt < 2*(n+m)-2: # 북
                 i -= 1
 
             last_value += 1
