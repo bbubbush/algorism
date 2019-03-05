@@ -1,4 +1,5 @@
 import java.util.LinkedList;
+import java.util.ArrayList;
 import java.util.Stack;
 
 class Graph {
@@ -57,18 +58,34 @@ class Graph {
 
 
     public static void main(String[] args) {
-        Graph g = new Graph(9);
-        g.addEdge(0, 1);
-        g.addEdge(1, 2);
-        g.addEdge(1, 3);
-        g.addEdge(2, 4);
-        g.addEdge(2, 3);
-        g.addEdge(3, 4);
-        g.addEdge(3, 5);
-        g.addEdge(5, 6);
-        g.addEdge(5, 7);
-        g.addEdge(6, 8);
+        int result = 0;
+        int size = 8;
+        int[] intArr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        int[] arr = {2, 1, 3, 4, 5, 6, 7, 9, 10, 8};
+        ArrayList<Integer> numLst = new ArrayList<Integer>();
+        ArrayList<Integer> lst = new ArrayList<Integer>();
+        for (int i = 0; i < arr.length; i++) {
+            if (i+1 != arr[i]) {
+                numLst.add(intArr[i]);
+                lst.add(arr[i]);
+            } else {
+                result++;
+            }
+        }
+        System.out.println("result >> " + result);
+        
+        Graph g = new Graph(lst.size()); // 총 5개의 노드를 사용
+        for (int i = 0; i < lst.size(); i++) {
+            System.out.println(numLst.get(i) + ", " + lst.get(i));
+            g.addEdge(numLst.get(i) - 1, lst.get(i) - 1);
+        }
 
-        g.dfs();
+
+
+        // g.addEdge(0, 1);
+        // g.addEdge(1, 4);
+        // g.addEdge(1, 3);
+
+        // g.dfs();
     }
 }

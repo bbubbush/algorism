@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Boj10451",
+            "request": "launch",
+            "mainClass": "Boj10451"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Graph",
             "request": "launch",
             "mainClass": "Graph"
